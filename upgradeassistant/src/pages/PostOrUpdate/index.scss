@@ -1,0 +1,22 @@
+.PostOrUpdate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( 100vw - 170px );
+    height: calc( 100vh - 64px );
+    box-sizing: border-box;
+    
+    .center {
+        width: 95%;
+        height: 95%;
+
+        .content {
+            width: 100%;
+            height: 90%;
+            padding-top: 40px;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.1);
+            overflow: auto;
+        }
+    }
+}

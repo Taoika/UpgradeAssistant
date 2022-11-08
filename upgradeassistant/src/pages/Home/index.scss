@@ -1,0 +1,16 @@
+.Home {
+    display: flex;
+    flex-wrap: wrap;
+    .head {
+        height: 64px;
+        width: 100%;
+        background-color: antiquewhite;
+    }
+    
+    aside {
+        width: 150px;
+        height: calc( 100vh - 64px );
+        background-color: azure;
+    }
+}
+

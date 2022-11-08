@@ -1,3 +1,4 @@
+import 'antd/dist/antd.min.css'
 import React from 'react';
 import Home from './pages/Home';
 
