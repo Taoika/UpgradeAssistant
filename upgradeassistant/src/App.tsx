@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Nav data={data} />
+      <div style={{ width: '100vw', height: '40px' }}></div>
       {element}
     </div>
   );
