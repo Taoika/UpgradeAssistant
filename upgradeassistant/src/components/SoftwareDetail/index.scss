@@ -1,0 +1,120 @@
+.SoftwareDetail {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+
+    .SoftwareDetail-mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .2);
+        z-index: 1;
+    }
+
+    .SoftwareDetail-main {
+        width: 80vw;
+        height: 70vh;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, .2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        z-index: 1;
+        overflow: auto;
+
+        .SoftwareDetail-message {
+            display: flex;
+            width: 95%;
+            margin-top: 10px;
+            height: 130px;
+
+            .SoftwareDetail-message-middle {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 8px;
+                align-content: flex-start;
+                width: 70%;
+
+                .SoftwareDetail-message-title {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .SoftwareDetail-message-desc {
+                    font-size: 6px;
+                    font-weight: 300;
+                    display: -webkit-box;
+
+                    -webkit-box-orient: vertical;
+
+                    -webkit-line-clamp: 3;
+
+                    overflow: hidden;
+                }
+
+            }
+
+            .SoftwareDetail-message-other {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 20px;
+
+                p {
+                    font-size: 6px;
+                    margin-top: 10px;
+                }
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+            }
+        }
+
+        .SoftwareDetail-version {
+            width: 95%;
+
+            // margin-top: -70px;
+            .SoftwareDetail-eachVersion {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+                .SoftwareDetail-eachVersion-number {
+                    flex: 1.2;
+                    font-size: 12px;
+                }
+
+                .SoftwareDetail-eachVersion-message {
+                    flex: 5;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding-right: 10px;
+                    font-size: 8px;
+                    font-weight: 300;
+                }
+
+                .SoftwareDetail-eachVersion-button {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+}

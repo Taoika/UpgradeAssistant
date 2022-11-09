@@ -1,16 +1,105 @@
 .Home {
     display: flex;
+    justify-content: center;
+    width: 100vw;
     flex-wrap: wrap;
-    .head {
-        height: 64px;
-        width: 100%;
-        background-color: antiquewhite;
+
+
+    .Home-Top {
+        margin-top: 10px;
+        display: flex;
+        width: 95%;
+
+        .Home-Search {
+            flex: 1;
+            align-items: center;
+            display: flex;
+            justify-content: end;
+            height: 100%;
+
+            // padding-right: 50px;
+        }
+
+        ul {
+            flex: 1;
+            width: 40vw;
+            height: 100%;
+            display: flex;
+            color: rgb(132, 132, 132);
+            font-size: 16px;
+
+            li {
+                height: 100%;
+                margin-right: 30px;
+
+            }
+        }
     }
-    
-    aside {
-        width: 150px;
-        height: calc( 100vh - 64px );
-        background-color: azure;
+
+    .Home-Main {
+        width: 95%;
+        margin-top: 0px;
+
+        .Home-Type {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 4px 0;
+        }
+
+        .Home-Line {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(208, 208, 208);
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .Home-Software:hover {
+                cursor: pointer;
+            }
+
+            .Home-Software {
+                width: 200px;
+                height: 100px;
+                background-color: white;
+                border-radius: 5px;
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .1);
+
+                .Home-Pic {
+                    margin-right: 10px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .Home-Name {
+                    font-size: 16px;
+                }
+
+                .Home-Detail {
+                    white-space: nowarp;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100px;
+                }
+            }
+
+            i {
+                width: 200px;
+            }
+        }
+
     }
 }
-

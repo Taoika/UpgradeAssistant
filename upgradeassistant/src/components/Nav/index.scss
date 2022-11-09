@@ -1,0 +1,42 @@
+.Nav {
+    display: flex;
+    height: 40px;
+    width: 100vw;
+    background: rgb(61, 109, 181);
+    position: fixed;
+
+    .Nav-logo {
+        display: flex;
+        flex: 2;
+
+        img {
+            height: 100%;
+        }
+
+    }
+
+    .Nav-main {
+        display: flex;
+        flex: 3;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            font-size: 14px;
+            font-weight: 200;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin: 0 30px;
+            }
+
+            a {
+                color: rgb(250, 250, 250);
+            }
+        }
+    }
+}

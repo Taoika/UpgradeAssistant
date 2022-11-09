@@ -1,9 +1,10 @@
 import Home from "../pages/Home";
 
 const routes = [
+    //home
     {
         path: '/Home',
-        element: <Home/>,
+        element: <Home />,
     },
 ];
 
