@@ -1,4 +1,6 @@
 import React from 'react';
+import 'antd/dist/antd.variable.min.css';
+import 'antd/dist/antd.min.css'
 import Home from './pages/Home';
 import { useRoutes } from 'react-router-dom'
 import routes from './routes'
