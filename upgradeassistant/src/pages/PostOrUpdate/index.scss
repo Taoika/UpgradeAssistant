@@ -1,9 +1,22 @@
+.tempContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.tempAside {
+    height: calc( 100vh - 60px );
+    width: 150px;
+    background-color: antiquewhite;
+}
+
 .PostOrUpdate {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc( 100vw - 170px );
-    height: calc( 100vh - 64px );
+    width: calc( 100vw - 150px );
+    height: calc( 100vh - 60px );
     box-sizing: border-box;
     
     .center {

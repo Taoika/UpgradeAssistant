@@ -41,7 +41,6 @@ export default function Home() {
           </li>)
         })}
       </ul>
-      <PostOrUpdate/>
     </div>
   )
 }

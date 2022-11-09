@@ -10,12 +10,12 @@ import Nav from './components/Nav'
 function App() {
   const element = useRoutes(routes);
   //导航栏
-  const data = [['home', '主页'], ['alldata', '所有资料'], ['test', '你好']]
+  const data = [['home', '主页'], ['alldata', '所有资料'], ['test', '你好'],['PostOrUpdate','软件上传']]
 
   return (
     <div className="App">
       <Nav data={data} />
-      <div style={{ width: '100vw', height: '40px' }}></div>
+      <div style={{ width: '100vw', height: '60px' }}></div>
       {element}
     </div>
   );
